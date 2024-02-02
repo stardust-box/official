@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stardust Box - Products</title>
+  <!--<style amp-boilerplate>body{-webkit-animation:-amp-start 4s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 4s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 4s steps(1,end) 0s 1 normal both;animation:-amp-start 4s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Stardust Box Logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Our Products</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="filter-container">
+    <button class="filter-btn" data-category="all" onclick="filterItems('all')">All Products</button>
+<button class="filter-btn" data-category="handbag" onclick="filterItems('handbag')">Handbags</button>
+<button class="filter-btn" data-category="accessory" onclick="filterItems('accessory')">Accessories</button>
+
+  </div>
+
+  <section id="product-container">
+    <div class="product-card">
+      <!---- <img src="images/bag1.jpg" alt="Handbag 1">
+        <p class="price">$99.99</p>
+        <div class="product-info">
+            <p class="product-name">Product Name and Reference ID:</p>
+            <p class="product-price">Product Price:</p>
+          <p class="category">Category: Handbag</p>
+          <p class="dimensions">Dimensions: 10x5x3 inches</p>
+          <p class="color">Color: A delightful shade of pink that exudes charm and femininity.</p>
+            <p class="material">Material: High-quality beads combined with a durable metal chain for a stylish and sturdy accessory.</p>
+        </div>-->
+      </div>
+      
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://wa.me/+96170366496" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/stardustbox" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/+96170366496" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2024 Stardust Box. All Rights Reserved | Stardust Box - Elevating Moments, Unveiling Magic&trade;</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>

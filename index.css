@@ -1,0 +1,209 @@
+/* ... (existing styles) */
+
+header {
+  background-color: black;
+  padding: 10px 0;
+  text-align: center; /* Center the content */
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Bodoni', serif;
+  background-image: url('images/background3.jpeg');
+  background-size: cover;
+  background-position: center center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+
+.content {
+  z-index: 1; /* Ensure content appears on top of the blurred background */
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-title{
+  color:rgb(255, 238, 144);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.logo img {
+  max-height: 50px;
+  display: block; /* Ensure the image is centered */
+  margin: 0 auto;
+}
+nav a {
+  margin-right: 20px; /* Add some spacing between the links */
+  font-size: 16px; /* Adjust font size for better readability */
+  text-decoration: none; /* Remove default underline */
+  color: rgb(255, 238, 144); /* Set the default link color */
+  transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
+}
+
+nav a:hover {
+  color: white; /* Change the link color on hover to white */
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(0, 1, 8);
+  border-width: 5px;
+  border: 1px solid rgb(255, 238, 144);
+}
+
+/* ... (existing styles) */
+
+.marquee-inner {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee h2 {
+  color: rgb(255, 238, 144);
+  margin-bottom: 10px;
+}
+
+.product-link {
+  position: relative;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.product-link img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid rgb(255, 238, 144);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-price {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: rgb(255, 238, 144);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.footer {
+  background-color: black;
+  color: rgb(255, 238, 144);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icon {
+  color: rgb(255, 238, 144);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+
+/* ... (existing styles) */
+@media only screen and (max-width: 769px) {
+
+  body {
+    background-size: auto; /* Adjust background size for better visibility on smaller screens */
+  }
+  header {
+    padding: 10px 0;
+  }
+  nav a {
+    margin-left: 20px;
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+  .container {
+    flex-direction: column; /* Stack items vertically in smaller screens */
+    align-items: center;
+  }
+  .big-title{
+    font-size: 140%;
+  padding-top: 15px;
+  }
+
+  .marquee {
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden; /* Enable horizontal scroll for small screens */
+    white-space: nowrap;
+  }
+  .marquee-inner {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .marquee h2 {
+    font-size: 1.5em; /* Adjust font size for better readability on smaller screens */
+    display: inline-block;
+    animation: marquee 5s linear infinite; /* Reduce animation duration */
+    animation-delay: -2s;
+  }
+
+
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .product-link {
+    margin-right: 0px; /* Adjust margin for better spacing */
+  }
+
+  .product-link img {
+    width: 200px; /* Adjust the width of the product images */
+    height: 200px; /* Adjust the height of the product images */
+    object-fit: cover; /* Maintain aspect ratio and cover the box */
+    border: 1px solid rgb(255, 238, 144);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .product-price {
+    display: block; /* Ensure prices are displayed on the marquee */
+    font-size: 10px; /* Adjust font size for better readability */
+    margin-bottom: -5px;
+  }
+
+  .social-icons {
+    font-size: 18px; /* Adjust font size for better visibility on smaller screens */
+  }
+}

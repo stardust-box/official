@@ -1,0 +1,29 @@
+[
+    {
+      "name": "Handbag 1",
+      "category": "handbag",
+      "price": 99.99,
+      "dimensions": "10x8 inches",
+      "color": "Pink",
+      "material": "Beads",
+      "image": "images/bag1.jpg"
+    },
+    {
+      "name": "Accessory 1",
+      "category": "accessory",
+      "price": 49.99,
+      "dimensions": "5x5 inches",
+      "color": "Gold",
+      "material": "Metal",
+      "image": "images/bag2.jpg"
+    },
+    {
+        "name": "Accessory 3",
+        "category": "accessory",
+        "price": 49.99,
+        "dimensions": "5x5 inches",
+        "color": "Gold",
+        "material": "Metal",
+        "image": "images/bag3.jpg"
+      }
+  ]
